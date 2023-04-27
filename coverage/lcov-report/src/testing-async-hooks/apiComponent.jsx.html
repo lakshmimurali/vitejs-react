@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/TextBox.jsx</title>
+    <title>Code coverage report for src/testing-async-hooks/apiComponent.jsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../sort-arrow-sprite.png);
+            background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> TextBox.jsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/testing-async-hooks</a> apiComponent.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
@@ -83,49 +83,46 @@
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState } from 'react';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState, useEffect } from 'react';
 &nbsp;
-export default function <span class="fstat-no" title="function not covered" >TextBox(</span>) {
-  const [textBoxValue, setTextBoxValue] = <span class="cstat-no" title="statement not covered" >useState('');</span>
-  let changeHandler = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(e</span>vent) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    console.log(event.target.value);</span>
-<span class="cstat-no" title="statement not covered" >    setTextBoxValue(event.target.value);</span>
-  };
+export const APIComponent = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+  const [data, setData] = <span class="cstat-no" title="statement not covered" >useState();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
-    &lt;div&gt;
-      &lt;input
-        role="nameinfo"
-        type="text"
-        value={textBoxValue}
-        placeholder="Good Name Please"
-        onChange={changeHandler}
-      /&gt;
-    &lt;/div&gt;
-  );
-}
+<span class="cstat-no" title="statement not covered" >  useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+    let isMounted = <span class="cstat-no" title="statement not covered" >true;</span>
+<span class="cstat-no" title="statement not covered" >    fetch('/profileName')</span>
+      .then(<span class="fstat-no" title="function not covered" >(r</span>esponse) =&gt; <span class="cstat-no" title="statement not covered" >response.json())</span>
+      .then(<span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {
+<span class="cstat-no" title="statement not covered" >        if (isMounted) {</span>
+<span class="cstat-no" title="statement not covered" >          setData(data);</span>
+        }
+      });
+<span class="cstat-no" title="statement not covered" >    return <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      isMounted = false;</span>
+    };
+  }, []);
+<span class="cstat-no" title="statement not covered" >  return &lt;div&gt;{data &amp;&amp; &lt;div role="contentinfo"&gt;Name is {data.name}&lt;/div&gt;}&lt;/div&gt;;</span>
+};
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -135,14 +132,14 @@ export default function <span class="fstat-no" title="function not covered" >Tex
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
                 at 2023-04-27T09:58:27.008Z
             </div>
-        <script src="../prettify.js"></script>
+        <script src="../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../sorter.js"></script>
-        <script src="../block-navigation.js"></script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
     </body>
 </html>
     
