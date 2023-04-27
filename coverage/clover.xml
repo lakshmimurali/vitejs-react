@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1682592625286" clover="3.2.0">
-  <project timestamp="1682592625286" name="All files">
-    <metrics statements="51" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="29" coveredmethods="0" elements="86" coveredelements="0" complexity="0" loc="51" ncloc="51" packages="9" files="11" classes="11"/>
+<coverage generated="1682594187296" clover="3.2.0">
+  <project timestamp="1682594187296" name="All files">
+    <metrics statements="53" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="30" coveredmethods="0" elements="89" coveredelements="0" complexity="0" loc="53" ncloc="53" packages="9" files="11" classes="11"/>
     <package name="src">
       <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="App.jsx" path="/home/projects/vitejs-vite-gizxst/src/App.jsx">
@@ -57,7 +57,7 @@
       </file>
     </package>
     <package name="src.redux-example">
-      <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+      <metrics statements="14" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>
       <file name="reduxCounter.js" path="/home/projects/vitejs-vite-gizxst/src/redux-example/reduxCounter.js">
         <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="6" count="0" type="stmt"/>
@@ -67,7 +67,7 @@
         <line num="21" count="0" type="stmt"/>
       </file>
       <file name="store.js" path="/home/projects/vitejs-vite-gizxst/src/redux-example/store.js">
-        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
@@ -75,6 +75,8 @@
         <line num="22" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.simple-custom-hook">
