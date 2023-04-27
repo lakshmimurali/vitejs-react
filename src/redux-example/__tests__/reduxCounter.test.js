@@ -1,30 +1,31 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Provider } from 'react-redux';
 
 import { ReduxCounter } from '../reduxCounter';
-import { store } from '../store';
+import { createStore } from '../store';
 
-test('increment', () => {
+test.only('increment', () => {
   render(
-    <Provider store={store}>
+    <Provider store={createStore()}>
       <ReduxCounter />
     </Provider>
   );
 
   const counter = screen.getByRole('contentinfo');
+  console.log(counter);
   expect(counter).toHaveTextContent('0');
 
   const addButton = screen.getByText(/Increment/i);
-  userEvent.click(addButton);
+  fireEvent.click(addButton);
 
   expect(counter).toHaveTextContent('1');
 });
 
-test('increment again', () => {
+test.only('increment again', () => {
   render(
-    <Provider store={store}>
+    <Provider store={createStore()}>
       <ReduxCounter />
     </Provider>
   );
@@ -33,7 +34,7 @@ test('increment again', () => {
   expect(counter).toHaveTextContent('0');
 
   const addButton = screen.getByText(/Increment/i);
-  userEvent.click(addButton);
+  fireEvent.click(addButton);
 
   expect(counter).toHaveTextContent('1');
 });

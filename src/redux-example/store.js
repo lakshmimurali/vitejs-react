@@ -26,8 +26,11 @@ export const counterSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
-export const store = configureStore({
-  reducer: {
-    counter: counterSlice.reducer,
-  },
-});
+export const createStore = () =>
+  configureStore({
+    reducer: {
+      counter: counterSlice.reducer,
+    },
+  });
+
+export const store = createStore();
