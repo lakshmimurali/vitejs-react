@@ -1,6 +1,6 @@
 {
   "installDependencies": true,
-  "startCommand": "npm run jesttest",
+  "startCommand": "npm run testjest",
   "env": {
     "NODE_ENV": "development"
   }
