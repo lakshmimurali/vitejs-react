@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { ReduxCounter } from '../reduxCounter';
 import { createStore } from '../store';
 
-test.only('increment', () => {
+test('increment', () => {
   render(
     <Provider store={createStore()}>
       <ReduxCounter />
@@ -14,16 +14,15 @@ test.only('increment', () => {
   );
 
   const counter = screen.getByRole('contentinfo');
-  console.log(counter);
   expect(counter).toHaveTextContent('0');
 
   const addButton = screen.getByText(/Increment/i);
-  fireEvent.click(addButton);
+  userEvent.click(addButton);
 
   expect(counter).toHaveTextContent('1');
 });
 
-test.only('increment again', () => {
+test('increment again', () => {
   render(
     <Provider store={createStore()}>
       <ReduxCounter />
@@ -34,7 +33,7 @@ test.only('increment again', () => {
   expect(counter).toHaveTextContent('0');
 
   const addButton = screen.getByText(/Increment/i);
-  fireEvent.click(addButton);
+  userEvent.click(addButton);
 
   expect(counter).toHaveTextContent('1');
 });

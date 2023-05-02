@@ -5,9 +5,8 @@ import { ButtonWrapper } from '../buttonWrapper.jsx';
 
 test('handles onClick', () => {
   const onClick = jest.fn();
-  const user = userEvent.setup();
   render(<ButtonWrapper onClick={onClick} title="Add Item" />);
   const buttonElement = screen.getByText('Add Item');
-  user.click(buttonElement);
+  userEvent.click(buttonElement);
   expect(onClick).toHaveBeenCalledTimes(1);
 });

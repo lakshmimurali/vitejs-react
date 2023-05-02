@@ -8,7 +8,7 @@ test('handles onClick', () => {
 
   const divElement = screen.getByRole('contentinfo');
   const buttonElement = screen.getByText('Add One');
-  fireEvent.click(buttonElement);
+  userEvent.click(buttonElement);
 
   expect(divElement).toHaveTextContent('Count is 1');
 });
