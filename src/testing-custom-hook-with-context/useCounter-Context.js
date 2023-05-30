@@ -11,7 +11,9 @@ export const CounterStepProvider = ({ step, children }) => (
 export function useCounter(initialValue = 0) {
   const [count, setCount] = useState(initialValue);
   const step = useContext(CounterStepContext);
+  console.log(step);
   const increment = useCallback(() => setCount((x) => x + step), [step]);
+  console.log(increment);
   const reset = useCallback(() => setCount(initialValue), [initialValue]);
   return { count, increment, reset };
 }
