@@ -5,7 +5,12 @@ test('should use custom step when incrementing', () => {
   const wrapper = ({ children }) => (
     <CounterStepProvider step={2}>{children}</CounterStepProvider>
   );
-  const { result } = renderHook(() => useCounter(), { wrapper });
+  const { result } = renderHook(() => useCounter(), {
+    wrapper,
+    initialProps: {
+      step: 2,
+    },
+  });
 
   act(() => {
     result.current.increment();
