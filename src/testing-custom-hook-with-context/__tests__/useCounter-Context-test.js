@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import { CounterStepProvider, useCounter } from './counter';
+import { CounterStepProvider, useCounter } from '../useCounter-Context.js';
 
 test('should use custom step when incrementing', () => {
   const wrapper = ({ children }) => (
